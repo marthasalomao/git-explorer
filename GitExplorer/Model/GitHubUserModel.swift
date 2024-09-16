@@ -6,7 +6,6 @@ struct GitHubUserModel: Codable {
     let login: String
     let avatar_url: String
     let html_url: String
-    let repositories: [Repository]
     
     struct Repository: Codable {
         let id: Int
