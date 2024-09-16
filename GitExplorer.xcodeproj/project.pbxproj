@@ -21,6 +21,7 @@
 		1950978B2C9753CF00C920C1 /* GitHubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1950978A2C9753CF00C920C1 /* GitHubService.swift */; };
 		ED9060152C98B4AA00DD4873 /* GitHubViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9060142C98B4AA00DD4873 /* GitHubViewModel.swift */; };
 		ED9060172C98B5F500DD4873 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9060162C98B5F500DD4873 /* UserTableViewCell.swift */; };
+		ED9060192C98CC9200DD4873 /* GitHubCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9060182C98CC9200DD4873 /* GitHubCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		1950978A2C9753CF00C920C1 /* GitHubService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubService.swift; sourceTree = "<group>"; };
 		ED9060142C98B4AA00DD4873 /* GitHubViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubViewModel.swift; sourceTree = "<group>"; };
 		ED9060162C98B5F500DD4873 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		ED9060182C98CC9200DD4873 /* GitHubCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 		ED9060122C98B47900DD4873 /* Coordinator  */ = {
 			isa = PBXGroup;
 			children = (
+				ED9060182C98CC9200DD4873 /* GitHubCoordinator.swift */,
 			);
 			path = "Coordinator ";
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 			files = (
 				195097892C9753A000C920C1 /* CustomError.swift in Sources */,
 				195097562C96B43C00C920C1 /* UserListViewController.swift in Sources */,
+				ED9060192C98CC9200DD4873 /* GitHubCoordinator.swift in Sources */,
 				195097522C96B43C00C920C1 /* AppDelegate.swift in Sources */,
 				195097542C96B43C00C920C1 /* SceneDelegate.swift in Sources */,
 				ED9060172C98B5F500DD4873 /* UserTableViewCell.swift in Sources */,

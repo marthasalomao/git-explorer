@@ -2,6 +2,8 @@
 import UIKit
 
 class UserListViewController: UIViewController {
+    
+    var coordinator: GitHubCoordinator?
         
     private let tableView: UITableView = {
         let tableView = UITableView()
