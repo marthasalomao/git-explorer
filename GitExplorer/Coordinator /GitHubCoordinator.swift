@@ -5,7 +5,8 @@ protocol Coordinator {
     var navigationController: UINavigationController { get set }
 }
 
-class GitHubCoordinator: Coordinator {
+final class GitHubCoordinator: Coordinator {
+    
     var navigationController: UINavigationController
     
     init(navigationController: UINavigationController) {
@@ -15,7 +16,21 @@ class GitHubCoordinator: Coordinator {
     func start() {
         let viewModel = GitHubViewModel()
         let userListViewController = UserListViewController(viewModel: viewModel)
-        userListViewController.coordinator = self
+        userListViewController.delegate = self
         navigationController.pushViewController(userListViewController, animated: true)
+    }
+}
+
+extension GitHubCoordinator: UserListViewControllerDelegate {
+    func showUserDetails(for user: GitHubUserModel) {
+        let userDetailViewController = UserDetailViewController(user: user)
+        userDetailViewController.delegate = self
+        navigationController.pushViewController(userDetailViewController, animated: true)
+    }
+}
+
+extension GitHubCoordinator: UserDetailViewControllerDelegate {
+    func showRepositories(for user: GitHubUserModel) {
+        // Add repo screen
     }
 }

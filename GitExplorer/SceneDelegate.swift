@@ -9,15 +9,17 @@ import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
+    var coordinator: GitHubCoordinator?
     var window: UIWindow?
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         let window = UIWindow(windowScene: windowScene)
-        let viewModel = GitHubViewModel()
-        let userListViewController = UserListViewController(viewModel: viewModel)
-        let navigationController = UINavigationController(rootViewController: userListViewController)
+        let navigationController = UINavigationController()
+        coordinator = GitHubCoordinator(navigationController: navigationController)
+        coordinator?.start()
+        
         window.rootViewController = navigationController
         self.window = window
         window.makeKeyAndVisible()

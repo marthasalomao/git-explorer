@@ -22,6 +22,7 @@
 		ED9060152C98B4AA00DD4873 /* GitHubViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9060142C98B4AA00DD4873 /* GitHubViewModel.swift */; };
 		ED9060172C98B5F500DD4873 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9060162C98B5F500DD4873 /* UserTableViewCell.swift */; };
 		ED9060192C98CC9200DD4873 /* GitHubCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9060182C98CC9200DD4873 /* GitHubCoordinator.swift */; };
+		ED90601B2C98DAF400DD4873 /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED90601A2C98DAF400DD4873 /* UserDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		ED9060142C98B4AA00DD4873 /* GitHubViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubViewModel.swift; sourceTree = "<group>"; };
 		ED9060162C98B5F500DD4873 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		ED9060182C98CC9200DD4873 /* GitHubCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubCoordinator.swift; sourceTree = "<group>"; };
+		ED90601A2C98DAF400DD4873 /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 			children = (
 				195097552C96B43C00C920C1 /* UserListViewController.swift */,
 				ED9060162C98B5F500DD4873 /* UserTableViewCell.swift */,
+				ED90601A2C98DAF400DD4873 /* UserDetailViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				195097522C96B43C00C920C1 /* AppDelegate.swift in Sources */,
 				195097542C96B43C00C920C1 /* SceneDelegate.swift in Sources */,
 				ED9060172C98B5F500DD4873 /* UserTableViewCell.swift in Sources */,
+				ED90601B2C98DAF400DD4873 /* UserDetailViewController.swift in Sources */,
 				1950978B2C9753CF00C920C1 /* GitHubService.swift in Sources */,
 				ED9060152C98B4AA00DD4873 /* GitHubViewModel.swift in Sources */,
 				195097872C97503700C920C1 /* GitHubUserModel.swift in Sources */,

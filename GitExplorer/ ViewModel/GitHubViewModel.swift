@@ -8,7 +8,7 @@ protocol GitHubViewModelDelegate: AnyObject {
     func didFailToFetchRepositories(with error: CustomError)
 }
 
-class GitHubViewModel {
+final class GitHubViewModel {
     private let gitHubService: GitHubServiceProtocol
     weak var delegate: GitHubViewModelDelegate?
     

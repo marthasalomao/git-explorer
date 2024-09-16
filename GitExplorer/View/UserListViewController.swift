@@ -1,10 +1,11 @@
 
 import UIKit
 
-class UserListViewController: UIViewController {
-    
-    var coordinator: GitHubCoordinator?
-        
+protocol UserListViewControllerDelegate: AnyObject {
+    func showUserDetails(for user: GitHubUserModel)
+}
+
+final class UserListViewController: UIViewController {
     private let tableView: UITableView = {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -12,7 +13,9 @@ class UserListViewController: UIViewController {
     }()
         
     private var viewModel: GitHubViewModel
-        
+    
+    weak var delegate: UserListViewControllerDelegate?
+    
     init(viewModel: GitHubViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
@@ -73,7 +76,7 @@ extension UserListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let user = viewModel.user(at: indexPath.row)
-        // Add detail view controller
+        delegate?.showUserDetails(for: user)  // Navegar para a tela de detalhes
     }
 }
 
