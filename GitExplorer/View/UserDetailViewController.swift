@@ -78,7 +78,6 @@ final class UserDetailViewController: UIViewController {
     private func configureUserDetails() {
         loginLabel.text = user.login
         
-        // Load the avatar image
         if let avatarUrl = URL(string: user.avatar_url) {
             URLSession.shared.dataTask(with: avatarUrl) { [weak self] data, response, error in
                 guard let self = self, let data = data, let image = UIImage(data: data) else { return }
@@ -90,6 +89,6 @@ final class UserDetailViewController: UIViewController {
     }
     
     @objc func didTapRepositories() {
-        delegate?.showRepositories(for: user)  // Navigate to the repositories screen
+        delegate?.showRepositories(for: user)
     }
 }

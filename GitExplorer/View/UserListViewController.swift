@@ -11,7 +11,7 @@ final class UserListViewController: UIViewController {
         tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView
     }()
-        
+    
     private var viewModel: GitHubViewModel
     
     weak var delegate: UserListViewControllerDelegate?
@@ -24,7 +24,7 @@ final class UserListViewController: UIViewController {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -38,7 +38,7 @@ final class UserListViewController: UIViewController {
         configureTableView()
         viewModel.fetchUsers()
     }
-        
+    
     private func setupViews() {
         view.addSubview(tableView)
     }
@@ -80,8 +80,6 @@ extension UserListViewController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
-// MARK: - GitHubViewModelDelegate
-
 extension UserListViewController: GitHubViewModelDelegate {
     func didFetchUsersSuccessfully(_ users: [GitHubUserModel]) {
         DispatchQueue.main.async {
@@ -90,8 +88,8 @@ extension UserListViewController: GitHubViewModelDelegate {
     }
     
     func didFailToFetchUsers(with error: CustomError) {
+        print("Error searching for users: \(error)")
         // Add alert error
-        print("Erro ao buscar usuários: \(error)")
     }
     
     func didFetchRepositoriesSuccessfully(_ repositories: [GitHubUserModel.Repository]) {

@@ -23,6 +23,8 @@
 		ED9060172C98B5F500DD4873 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9060162C98B5F500DD4873 /* UserTableViewCell.swift */; };
 		ED9060192C98CC9200DD4873 /* GitHubCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9060182C98CC9200DD4873 /* GitHubCoordinator.swift */; };
 		ED90601B2C98DAF400DD4873 /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED90601A2C98DAF400DD4873 /* UserDetailViewController.swift */; };
+		ED90601D2C98ED5400DD4873 /* RepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED90601C2C98ED5400DD4873 /* RepositoriesViewController.swift */; };
+		ED90601F2C98EE5800DD4873 /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED90601E2C98EE5800DD4873 /* RepositoryTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		ED9060162C98B5F500DD4873 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		ED9060182C98CC9200DD4873 /* GitHubCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubCoordinator.swift; sourceTree = "<group>"; };
 		ED90601A2C98DAF400DD4873 /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		ED90601C2C98ED5400DD4873 /* RepositoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewController.swift; sourceTree = "<group>"; };
+		ED90601E2C98EE5800DD4873 /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +163,8 @@
 				195097552C96B43C00C920C1 /* UserListViewController.swift */,
 				ED9060162C98B5F500DD4873 /* UserTableViewCell.swift */,
 				ED90601A2C98DAF400DD4873 /* UserDetailViewController.swift */,
+				ED90601C2C98ED5400DD4873 /* RepositoriesViewController.swift */,
+				ED90601E2C98EE5800DD4873 /* RepositoryTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -319,8 +325,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED90601D2C98ED5400DD4873 /* RepositoriesViewController.swift in Sources */,
 				195097892C9753A000C920C1 /* CustomError.swift in Sources */,
 				195097562C96B43C00C920C1 /* UserListViewController.swift in Sources */,
+				ED90601F2C98EE5800DD4873 /* RepositoryTableViewCell.swift in Sources */,
 				ED9060192C98CC9200DD4873 /* GitHubCoordinator.swift in Sources */,
 				195097522C96B43C00C920C1 /* AppDelegate.swift in Sources */,
 				195097542C96B43C00C920C1 /* SceneDelegate.swift in Sources */,

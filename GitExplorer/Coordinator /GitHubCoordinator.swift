@@ -31,6 +31,8 @@ extension GitHubCoordinator: UserListViewControllerDelegate {
 
 extension GitHubCoordinator: UserDetailViewControllerDelegate {
     func showRepositories(for user: GitHubUserModel) {
-        // Add repo screen
+        let viewModel = GitHubViewModel()
+        let repositoriesViewController = RepositoriesViewController(user: user, viewModel: viewModel)
+        navigationController.pushViewController(repositoriesViewController, animated: true)
     }
 }
