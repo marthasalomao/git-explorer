@@ -17,7 +17,7 @@ final class RepositoryTableViewCell: UITableViewCell {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: 14, weight: .regular)
         label.numberOfLines = 0
-        label.textColor = .gray
+        label.textColor = .black
         return label
     }()
     
@@ -25,7 +25,7 @@ final class RepositoryTableViewCell: UITableViewCell {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: 14, weight: .regular)
-        label.textColor = .blue
+        label.textColor = .lightGray
         return label
     }()
     

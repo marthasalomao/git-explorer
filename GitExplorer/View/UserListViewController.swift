@@ -76,7 +76,7 @@ extension UserListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let user = viewModel.user(at: indexPath.row)
-        delegate?.showUserDetails(for: user)  // Navegar para a tela de detalhes
+        delegate?.showUserDetails(for: user)
     }
 }
 

@@ -10,7 +10,7 @@ class UserTableViewCell: UITableViewCell {
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
-        imageView.layer.cornerRadius = 25
+        imageView.layer.cornerRadius = 20
         return imageView
     }()
     
@@ -40,8 +40,8 @@ class UserTableViewCell: UITableViewCell {
         NSLayoutConstraint.activate([
             avatarImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 15),
             avatarImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
-            avatarImageView.widthAnchor.constraint(equalToConstant: 50),
-            avatarImageView.heightAnchor.constraint(equalToConstant: 50),
+            avatarImageView.widthAnchor.constraint(equalToConstant: 40),
+            avatarImageView.heightAnchor.constraint(equalToConstant: 40),
             
             loginLabel.leadingAnchor.constraint(equalTo: avatarImageView.trailingAnchor, constant: 15),
             loginLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
