@@ -69,8 +69,10 @@ Os principais elementos da interface foram rotulados adequadamente para garantir
 
 ## Próximos Passos
 
-- Melhorar o layout visual 
+- Melhorar o layout visual. 
 - Implementar paginação para carregar mais usuários e repositórios conforme o usuário realiza o scroll da lista.
 - Adicionar uma barra de pesquisa para facilitar a busca de usuários específicos do GitHub.
-- Adicionar mais informaçoe na tela de detalhes do usuário
-- Implementar alerta de erros 
+- Adicionar mais informações na tela de detalhes do usuário. 
+- Implementar alerta de erros.
+- Criar uma ViewModel separada para cada tela, seguindo o princípio Single Responsibility do SOLID.
+
